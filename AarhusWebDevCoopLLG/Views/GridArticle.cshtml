@@ -1,0 +1,7 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+<div id="box">
+		@CurrentPage.GetGridHtml("articleGrid", "Bootstrap3")
+	</div>

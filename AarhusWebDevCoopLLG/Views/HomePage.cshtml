@@ -1,0 +1,22 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+<div id="main-container">
+    <div id="main" class="wrapper clearfix">
+          <legend><h1 id="title">Welcome to @Umbraco.Field("pageTitle", recursive:true)</h1></legend>
+        <article>
+            <header>
+                @Umbraco.Field("maincontent")
+            </header>
+		</article>
+		
+		
+		<div class="newpro">
+			@Umbraco.RenderMacro("newestProjects")
+		
+		</div>
+           
+
+    </div> <!-- #main -->
+</div> <!-- #main-container -->
